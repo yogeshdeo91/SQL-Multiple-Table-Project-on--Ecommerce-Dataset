@@ -2,9 +2,9 @@
 
 ### Here are five problem statements you can explore using the E-commerce Order Dataset from Kaggle to practice SQL joins:
 
-1. Analyze Total Sales by Product Category
+#### 1. Analyze Total Sales by Product Category
 
----
+
 
 Problem: Calculate the total sales amount for each product category.
 
@@ -14,9 +14,9 @@ SQL Concept: INNER JOIN, GROUP BY, SUM()
 
 ---
 
-2. Identify Customers with the Most Orders
+#### 2. Identify Customers with the Most Orders
 
----
+
 
 Problem: Find the top 10 customers who have placed the most orders.
 
@@ -26,9 +26,9 @@ SQL Concept: INNER JOIN, GROUP BY, COUNT(), ORDER BY
 
 ---
 
-3. Determine the Average Order Value by Country
+#### 3. Determine the Average Order Value by Country
 
----
+
 
 Problem: Calculate the average order value for each country.
 
@@ -38,9 +38,9 @@ SQL Concept: INNER JOIN, AVG(), GROUP BY
 
 ---
 
-4. Find Products with Low Inventory and High Sales
+#### 4. Find Products with Low Inventory and High Sales
 
----
+
 
 Problem: Identify products that have low inventory levels but high sales figures.
 
@@ -50,13 +50,14 @@ SQL Concept: INNER JOIN, SUM(), WHERE
 
 ---
 
-5. Explore the Relationship Between Customer Location and Product Preferences
+#### 5. Explore the Relationship Between Customer Location and Product Preferences
 
----
+
 
 Problem: Analyze how customer locations influence product preferences by examining which products are popular in specific regions.
 
 Details: Join the customers, orders, and order_items tables to group and count the number of each product sold by region.
 
 SQL Concept: INNER JOIN, GROUP BY, COUNT()
-These problem statements will give you hands-on experience with SQL joins and aggregations, allowing you to extract meaningful insights from the dataset while practicing your SQL skills.
+
+^ These problem statements will give you hands-on experience with SQL joins and aggregations, allowing you to extract meaningful insights from the dataset while practicing your SQL skills.
