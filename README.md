@@ -35,7 +35,7 @@ SQL Concept: INNER JOIN, GROUP BY, SUM()
 
 Problem: Find the top 10 customers who have placed the most orders.
 
-```
+```mysql
 SELECT COUNT(order_id) as Total_orders, customers.customer_id AS Top_customer
 FROM orders
 JOIN customers 
@@ -57,7 +57,7 @@ SQL Concept: INNER JOIN, GROUP BY, COUNT(), ORDER BY
 
 Problem: Calculate the average order value for each country.
 
-```
+```mysql
 SELECT AVG(payment_value) AS Average_order_value, customer_state
 FROM payments
 JOIN orders
