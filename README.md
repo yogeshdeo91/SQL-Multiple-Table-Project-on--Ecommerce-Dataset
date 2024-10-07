@@ -11,7 +11,7 @@
 
 Problem: Calculated the total sales amount for each product category.
 
-```
+```mysql
 SELECT product_category_name as Product , SUM(payment_value) as Total_sales
 FROM orderitems
 JOIN payments 
