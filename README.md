@@ -1,12 +1,14 @@
 # SQL-Multiple-Table-Project-on--Ecommerce-Dataset
 
-### Here are five problem statements you can explore using the E-commerce Order Dataset from Kaggle to practice SQL joins:
+## The E-commerce Order Dataset provides comprehensive information related to orders, items within orders, customers, payments, and products for an e-commerce platform. This dataset is structured with multiple tables, each containing specific information about various aspects of the e-commerce operations. [Dataset] (https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset)
+
+### Explored problem statements:
 
 #### 1. Analyze Total Sales by Product Category
 
 
 
-Problem: Calculate the total sales amount for each product category.
+Problem: Calculated the total sales amount for each product category.
 
 Details: Join the orders table with the products table on the product_id to aggregate the sales amount by category. This will help in understanding which categories generate the most revenue.
 
@@ -60,4 +62,4 @@ Details: Join the customers, orders, and order_items tables to group and count t
 
 SQL Concept: INNER JOIN, GROUP BY, COUNT()
 
-^ These problem statements will give you hands-on experience with SQL joins and aggregations, allowing you to extract meaningful insights from the dataset while practicing your SQL skills.
+^These problem statements will give you hands-on experience with SQL joins and aggregations, allowing you to extract meaningful insights from the dataset while practicing your SQL skills.
