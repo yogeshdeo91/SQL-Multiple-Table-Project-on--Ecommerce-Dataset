@@ -1,7 +1,7 @@
 # SQL-Multiple-Table-Project-on--Ecommerce-Dataset
 
 ## The E-commerce Order Dataset provides comprehensive information related to orders, items within orders, customers, payments, and products for an e-commerce platform. This dataset is structured with multiple tables, each containing specific information about various aspects of the e-commerce operations.
-[Dataset] (https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset)
+[Dataset](https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset)
 
 ### Explored problem statements:
 
@@ -21,6 +21,9 @@ ON orderitems.product_id = products.product_id
 GROUP BY product_category_name
 ORDER BY Total_sales DESC;
 ```
+
+![Total Sales by Product Catagory](https://github.com/user-attachments/assets/3c505374-283c-4f7d-95a5-220117b62fc2)
+
 
 SQL Concept: INNER JOIN, GROUP BY, SUM()
 
