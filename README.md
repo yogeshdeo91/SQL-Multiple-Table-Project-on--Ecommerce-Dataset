@@ -1,25 +1,62 @@
-# SQL-Multiple-Table-Project-on--Movies-Dataset
+# SQL-Multiple-Table-Project-on--Ecommerce-Dataset
 
-Here are five problem statements you can explore using The Movies Dataset from Kaggle:
+### Here are five problem statements you can explore using the E-commerce Order Dataset from Kaggle to practice SQL joins:
 
-1. Find the Top-Rated Movies by Genre
-Problem: Identify the top 5 highest-rated movies in each genre (e.g., Action, Drama, Comedy).
-Details: By joining the movies_metadata.csv (which contains movie titles and genres) with ratings.csv (which contains user ratings), you can group the movies by genre and calculate average ratings to rank them.
-SQL Concept: INNER JOIN, GROUP BY, ORDER BY, AVG()
-2. Analyze Movie Revenue by Release Year
-Problem: Analyze which years had the highest total movie revenue and which individual movies contributed the most.
-Details: Using the movies_metadata.csv table, extract the release_date and revenue columns. You can aggregate the total revenue by year and identify the top-performing movies for each year.
-SQL Concept: GROUP BY, SUM(), ORDER BY
-3. Find the Most Prolific Directors
-Problem: Determine which directors have made the most movies in the dataset.
-Details: Join the movies_metadata.csv (which contains directors in the crew column) with other relevant data to count how many films each director has worked on.
-SQL Concept: GROUP BY, COUNT(), ORDER BY
-4. Analyze Popular Movie Trends Based on Runtime
-Problem: Explore how the runtime of movies has changed over the years and which runtimes are most common in specific genres.
-Details: By combining data from movies_metadata.csv (for runtime and genre) with ratings.csv, you can determine trends in runtime for various genres and time periods.
-SQL Concept: INNER JOIN, GROUP BY, AVG(), ORDER BY
-5. Correlation Between Budget and Revenue
-Problem: Investigate the relationship between a movie’s budget and its revenue, and identify if higher-budget movies tend to generate more revenue.
-Details: Using movies_metadata.csv, analyze the correlation between the budget and revenue columns. You can also break this down by genre or year to find trends.
-SQL Concept: SELECT, JOIN, GROUP BY, AVG()
-These problem statements will allow you to practice various SQL joins and data manipulation techniques, while exploring movie trends and insights using this diverse dataset.
+1. Analyze Total Sales by Product Category
+
+---
+
+Problem: Calculate the total sales amount for each product category.
+
+Details: Join the orders table with the products table on the product_id to aggregate the sales amount by category. This will help in understanding which categories generate the most revenue.
+
+SQL Concept: INNER JOIN, GROUP BY, SUM()
+
+---
+
+2. Identify Customers with the Most Orders
+
+---
+
+Problem: Find the top 10 customers who have placed the most orders.
+
+Details: Join the customers table with the orders table using the customer_id. Count the number of orders for each customer to identify the most active ones.
+
+SQL Concept: INNER JOIN, GROUP BY, COUNT(), ORDER BY
+
+---
+
+3. Determine the Average Order Value by Country
+
+---
+
+Problem: Calculate the average order value for each country.
+
+Details: Join the orders table with the customers table on customer_id, and then group the results by country to find the average order amount.
+
+SQL Concept: INNER JOIN, AVG(), GROUP BY
+
+---
+
+4. Find Products with Low Inventory and High Sales
+
+---
+
+Problem: Identify products that have low inventory levels but high sales figures.
+
+Details: Join the products table with the order_items table to get sales data and filter the results to show only products with inventory below a certain threshold and high total sales.
+
+SQL Concept: INNER JOIN, SUM(), WHERE
+
+---
+
+5. Explore the Relationship Between Customer Location and Product Preferences
+
+---
+
+Problem: Analyze how customer locations influence product preferences by examining which products are popular in specific regions.
+
+Details: Join the customers, orders, and order_items tables to group and count the number of each product sold by region.
+
+SQL Concept: INNER JOIN, GROUP BY, COUNT()
+These problem statements will give you hands-on experience with SQL joins and aggregations, allowing you to extract meaningful insights from the dataset while practicing your SQL skills.
