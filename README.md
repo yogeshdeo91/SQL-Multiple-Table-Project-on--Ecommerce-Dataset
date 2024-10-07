@@ -35,7 +35,17 @@ SQL Concept: INNER JOIN, GROUP BY, SUM()
 
 Problem: Find the top 10 customers who have placed the most orders.
 
-Details: Join the customers table with the orders table using the customer_id. Count the number of orders for each customer to identify the most active ones.
+```
+SELECT COUNT(order_id) as Total_orders, customers.customer_id AS Top_customer
+FROM orders
+JOIN customers 
+ON orders.customer_id = customers.customer_id
+GROUP BY Top_customer
+ORDER BY Total_orders DESC
+LIMIT 10;
+```
+![top 10 customers who have placed the most orders](https://github.com/user-attachments/assets/c2d6f829-3492-4c64-a3fa-720d0a13be43)
+
 
 SQL Concept: INNER JOIN, GROUP BY, COUNT(), ORDER BY
 
