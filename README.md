@@ -57,7 +57,18 @@ SQL Concept: INNER JOIN, GROUP BY, COUNT(), ORDER BY
 
 Problem: Calculate the average order value for each country.
 
-Details: Join the orders table with the customers table on customer_id, and then group the results by country to find the average order amount.
+```
+SELECT AVG(payment_value) AS Average_order_value, customer_state
+FROM payments
+JOIN orders
+ON payments.order_id = orders.order_id
+JOIN customers
+ON orders.customer_id = customers.customer_id
+GROUP BY customer_state;
+```
+
+![image](https://github.com/user-attachments/assets/5a3a37ee-41a8-45aa-af13-8c67d773653f)
+
 
 SQL Concept: INNER JOIN, AVG(), GROUP BY
 
