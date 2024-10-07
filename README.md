@@ -11,7 +11,16 @@
 
 Problem: Calculated the total sales amount for each product category.
 
-Details: Join the orders table with the products table on the product_id to aggregate the sales amount by category. This will help in understanding which categories generate the most revenue.
+```
+SELECT product_category_name as Product , SUM(payment_value) as Total_sales
+FROM orderitems
+JOIN payments 
+ON orderitems.order_id = payments.order_id
+JOIN products 
+ON orderitems.product_id = products.product_id
+GROUP BY product_category_name
+ORDER BY Total_sales DESC;
+```
 
 SQL Concept: INNER JOIN, GROUP BY, SUM()
 
