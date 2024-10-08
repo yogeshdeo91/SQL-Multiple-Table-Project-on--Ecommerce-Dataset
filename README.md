@@ -1,4 +1,4 @@
-# SQL Multiple Table Project on Ecommerce-Dataset
+# SQL Multiple Table Project on Ecommerce Dataset
 
 ## Project Overview
 This project utilizes an E-commerce Order Dataset to extract insights through SQL queries. The dataset contains comprehensive information about orders, items, customers, payments, and products on an e-commerce platform. It is structured with multiple tables, each providing specific details on different aspects of the platform's operations.
