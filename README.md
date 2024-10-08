@@ -45,7 +45,9 @@ GROUP BY Top_customer
 ORDER BY Total_orders DESC
 LIMIT 10;
 ```
-##### Visualization: ![top 10 customers who have placed the most orders](https://github.com/user-attachments/assets/c2d6f829-3492-4c64-a3fa-720d0a13be43)
+##### Visualization: 
+
+![top 10 customers who have placed the most orders](https://github.com/user-attachments/assets/c2d6f829-3492-4c64-a3fa-720d0a13be43)
 
 
 ##### SQL Concept: INNER JOIN, GROUP BY, COUNT(), ORDER BY
@@ -66,7 +68,9 @@ ON orders.customer_id = customers.customer_id
 GROUP BY customer_state;
 ```
 
-##### Visualization: ![image](https://github.com/user-attachments/assets/5a3a37ee-41a8-45aa-af13-8c67d773653f)
+##### Visualization: 
+
+![image](https://github.com/user-attachments/assets/5a3a37ee-41a8-45aa-af13-8c67d773653f)
 
 
 ##### SQL Concept: INNER JOIN, AVG(), GROUP BY
@@ -88,9 +92,12 @@ JOIN orderitems od ON od.order_id = o.order_id
 JOIN products p ON od.product_id = p.product_id
 GROUP BY c.customer_state, p.product_category_name;
 ```
-##### Visualization: ![how customer locations influence product preferences by examining which products are popular in specific regions](https://github.com/user-attachments/assets/76bca5a9-bdf0-440c-962c-7c7bc6b44dc7)
+##### Visualization:
+
+![how customer locations influence product preferences by examining which products are popular in specific regions](https://github.com/user-attachments/assets/76bca5a9-bdf0-440c-962c-7c7bc6b44dc7)
 
 
 #### SQL Concept: INNER JOIN, GROUP BY, COUNT()
 
-^These problem statements will give you hands-on experience with SQL joins and aggregations, allowing you to extract meaningful insights from the dataset while practicing your SQL skills.
+### Conclusion
+These SQL problem statements help in understanding the practical application of SQL joins and aggregations, offering insights into key aspects of e-commerce operations such as sales trends, customer behavior, and regional product preferences. This project also enhances skills in querying multiple tables to derive meaningful business insights.
